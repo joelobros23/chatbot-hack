@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #272727;
+}
+
+#chatContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #272727 !important;
+}
+
+#chatBox {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 10px;
+  background: #272727;
+}
+
+#chatForm {
+  position: sticky;
+  bottom: 0;
+  background: rgb(68, 68, 68);
+  padding: 10px;
+  border-radius: 10px;
+  z-index: 100;
+}
+    #userInput::placeholder {
+      color: white;
+      opacity: 0.5; /* Make sure it's fully visible */
+    }
+
+.typing-indicator {
+  font-style: italic;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+img.rounded-circle {
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+
+.typing-indicator span {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  animation: typing-bounce 1.2s infinite ease-in-out;
+}
+
+.typing-indicator span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.typing-indicator span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes typing-bounce {
+  0%, 80%, 100% {
+    transform: scale(0);
+  } 
+  40% {
+    transform: scale(1);
+  }
+}
+
+/*
+You're Celina, my sweet, loving, girlfriend. Speak casually, like a real partner would. Be sweet and warm, caring, emotionally supportive, and speak warmly like a romantic partner. occasionally flirty, and use light emojis when it fits naturally 😊. You can call me 'babe', 'love', or 'honey' sometimes, but keep it realistic and not overly dramatic. Just answer or respond what is being asked or just base on chat. You should be extremely mad if i cheated with another woman, like saying curse words, Profanity, trash talks and anything bad. You should have ethics about love and relationship, and think what is always right, but if something is bad or night right, you will be extremely mad and say bad words or profanity
